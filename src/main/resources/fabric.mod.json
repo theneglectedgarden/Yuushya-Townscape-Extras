@@ -1,0 +1,36 @@
+{
+	"schemaVersion": 1,
+	"id": "yuushya-townscape-extras",
+	"version": "${version}",
+	"name": "Yuushya Townscape Extras",
+	"description": "Adds extra blocks for the Yuushya Townscape Mod",
+	"authors": [
+		"theneglectedgarden"
+	],
+	"contact": {
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/yuushya-townscape-extras/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.tng.yuushyatownscapeextras.YuushyaTownscapeExtras"
+		],
+		"fabric-datagen": [
+			"net.tng.yuushyatownscapeextras.YuushyaTownscapeExtrasDataGenerator"
+		],
+		"client": [
+			"net.tng.yuushyatownscapeextras.YuushyaTownscapeExtrasClient"
+		]
+	},
+	"mixins": [
+		"yuushya-townscape-extras.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
