@@ -2,6 +2,9 @@ package net.tng.yuushyatownscapeextras;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.tng.yuushyatownscapeextras.block.ModBlocks;
+import net.tng.yuushyatownscapeextras.item.ModItemGroups;
+import net.tng.yuushyatownscapeextras.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,6 +14,8 @@ public class YuushyaTownscapeExtras implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		// test
+		ModItemGroups.registerItemGroups();
+		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }
