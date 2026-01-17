@@ -11,6 +11,6 @@ public class YuushyaTownscapeExtras implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+		// test
 	}
 }
